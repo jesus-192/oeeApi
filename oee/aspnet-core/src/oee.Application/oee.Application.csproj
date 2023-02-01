@@ -8,6 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Catalogos\**" />
+    <Compile Remove="Oee_Porcentaje\**" />
+    <Compile Remove="Operacion\**" />
+    <Compile Remove="Trazabilidad\**" />
+    <EmbeddedResource Remove="Catalogos\**" />
+    <EmbeddedResource Remove="Oee_Porcentaje\**" />
+    <EmbeddedResource Remove="Operacion\**" />
+    <EmbeddedResource Remove="Trazabilidad\**" />
+    <None Remove="Catalogos\**" />
+    <None Remove="Oee_Porcentaje\**" />
+    <None Remove="Operacion\**" />
+    <None Remove="Trazabilidad\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\oee.Domain\oee.Domain.csproj" />
     <ProjectReference Include="..\oee.Application.Contracts\oee.Application.Contracts.csproj" />
   </ItemGroup>

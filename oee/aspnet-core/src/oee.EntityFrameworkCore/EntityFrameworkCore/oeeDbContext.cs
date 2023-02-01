@@ -4,6 +4,7 @@ using oee.Catalogos.Categorias;
 using oee.Catalogos.DescripcionFallas;
 using oee.Catalogos.Turnos;
 using oee.Inventarios;
+using oee.Logs;
 using oee.Operacion;
 using oee.Trazabilidad;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
@@ -62,6 +63,7 @@ public class oeeDbContext :
     public DbSet<TipoIncidencia> TipoIncidencias { get; set; }
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Producto> Productos { get; set; }
+    public DbSet<Log> Logs { get; set; }
 
 
   // Tenant Management
