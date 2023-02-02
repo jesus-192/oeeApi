@@ -17,7 +17,9 @@ public class oeeDbContextFactory : IDesignTimeDbContextFactory<oeeDbContext>
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<oeeDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Default"));
+        //.UseNpgsql(configuration.GetConnectionString("Default"));
+        .UseSqlServer(configuration.GetConnectionString("Default"));
+
 
         return new oeeDbContext(builder.Options);
     }
